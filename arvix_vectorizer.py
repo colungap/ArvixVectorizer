@@ -65,7 +65,8 @@ if __name__ == '__main__':
     might be possible to combine different paragraph vectors to represent a document. It might also be possible to 
     keep the paragraph vectors separate and implement a voting system ie return top M count the number of times each 
     paragraph corresponds to and article and return the top N. Either way I decided for the sake of expediency to only
-    what was read in by default byt the llama doc reader since text that was ingested always included the abstract 
+    calc vectors for the text what was read in by default byt the llama doc reader, 
+    since text that was ingested always included the abstract 
     ie a summary of the entire journal and thus a good representation of the entire doc"""
 
     t1 = Thread(target=my_forever_while)

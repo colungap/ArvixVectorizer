@@ -13,7 +13,7 @@ def chroma_db(documents: [str], model: LlamaEmbeder):
     API so it may be possible to avoid having to parse out the documents and create embeddings for them prior to adding
     to db. The API method is much cleaner and the Document obj likely to be better than the document format I'm using,
     although I tried to maintain the import parts specifically the original id and the metadata.
-    It is also possible to use built-in embedding functions included in Chroma, but I wanted an implemenation where the
+    It is also possible to use built-in embedding functions included in Chroma, but I wanted an implementation where the
     database and the vector calculations where not tightly coupled. In theory, you can use whatever vector calc function
     as long it returns [Embedding/np.ndarray] or Embedding/np.ndarray.
     :param documents:
